@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario para reportar animales que necesitan rescate.">
+    <title>Rescate Animal | Reportar</title>
+</head>
+<body>
+    <header>
+        <h1>Rescate Animal</h1>
+        <p>Formulario de reporte ciudadano</p>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reportar.html" aria-current="page">Reportar un animal</a></li>
+                <li><a href="rescates.html">Registro de rescates</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="titulo-formulario">
+            <h2 id="titulo-formulario">Registrar un nuevo reporte</h2>
+            <p>Complete los campos solicitados. Los campos marcados como obligatorios deben contener información.</p>
+
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Información del animal</legend>
+
+                    <p>
+                        <label for="tipo-animal">Tipo de animal:</label>
+                        <select id="tipo-animal" name="tipo_animal" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="perro">Perro</option>
+                            <option value="gato">Gato</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="cantidad">Cantidad de animales:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" max="20" value="1" required>
+                    </p>
+
+                    <p>
+                        <label for="condicion">Condición observada:</label>
+                        <select id="condicion" name="condicion" required>
+                            <option value="">Seleccione una condición</option>
+                            <option value="herido">Herido</option>
+                            <option value="abandonado">Abandonado</option>
+                            <option value="perdido">Perdido</option>
+                            <option value="riesgo">En situación de riesgo</option>
+                            <option value="otro">Otra</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="descripcion">Descripción del caso:</label><br>
+                        <textarea id="descripcion" name="descripcion" rows="5" cols="45" minlength="10" maxlength="1000" required></textarea>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Ubicación del reporte</legend>
+                    <p>
+                        <label for="direccion">Dirección o referencia:</label>
+                        <input type="text" id="direccion" name="direccion" minlength="5" maxlength="150" required>
+                    </p>
+                    <p>
+                        <label for="ciudad">Ciudad:</label>
+                        <input type="text" id="ciudad" name="ciudad" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Datos de contacto</legend>
+                    <p>
+                        <label for="nombre">Nombre de quien reporta:</label>
+                        <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+                    </p>
+                    <p>
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" autocomplete="email" required>
+                    </p>
+                    <p>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" autocomplete="tel" pattern="[0-9+() -]{7,20}" required>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Enviar reporte</button>
+                    <button type="reset">Limpiar formulario</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><small>Los datos de este formulario son demostrativos. Esta maqueta no almacena ni envía reportes a un servidor.</small></p>
+        <p><a href="index.html">Volver al inicio</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consulta de casos de rescate animal registrados.">
+    <title>Rescate Animal | Registro de rescates</title>
+</head>
+<body>
+    <header>
+        <h1>Rescate Animal</h1>
+        <p>Consulta de reportes y casos de rescate</p>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reportar.html">Reportar un animal</a></li>
+                <li><a href="rescates.html" aria-current="page">Registro de rescates</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="titulo-registro">
+            <h2 id="titulo-registro">Registro de rescates</h2>
+            <p>La siguiente tabla contiene registros ficticios para demostrar la estructura de consulta del sistema.</p>
+
+            <table>
+                <caption>Casos de rescate registrados</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Código</th>
+                        <th scope="col">Animal</th>
+                        <th scope="col">Ubicación</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>RA-001</td>
+                        <td>Perro</td>
+                        <td>Sector Centro</td>
+                        <td><time datetime="2026-10-20">20/10/2026</time></td>
+                        <td>Atendido</td>
+                    </tr>
+                    <tr>
+                        <td>RA-002</td>
+                        <td>Gato</td>
+                        <td>Sector Norte</td>
+                        <td><time datetime="2026-10-25">25/10/2026</time></td>
+                        <td>En seguimiento</td>
+                    </tr>
+                    <tr>
+                        <td>RA-003</td>
+                        <td>Perro</td>
+                        <td>Sector Sur</td>
+                        <td><time datetime="2026-11-02">02/11/2026</time></td>
+                        <td>En evaluación</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section aria-labelledby="estados">
+            <h2 id="estados">Descripción de los estados</h2>
+            <dl>
+                <dt>Atendido</dt>
+                <dd>El caso recibió atención inicial.</dd>
+                <dt>En seguimiento</dt>
+                <dd>El equipo continúa verificando la situación del animal.</dd>
+                <dt>En evaluación</dt>
+                <dd>El reporte está pendiente de revisión.</dd>
+            </dl>
+        </section>
+
+        <section aria-labelledby="nuevo-reporte">
+            <h2 id="nuevo-reporte">¿Conoce otro caso?</h2>
+            <p><a href="reportar.html">Registrar un nuevo reporte</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p><small>Sistema de Rescate Animal - Proyecto académico HTML5.</small></p>
+    </footer>
+</body>
+</html>
