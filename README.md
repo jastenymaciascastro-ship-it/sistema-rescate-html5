@@ -36,3 +36,6 @@ Esta entrega corresponde a una maqueta estructural HTML5. El formulario utiliza 
 
 Se completa la documentación del proyecto de maquetación estructural del Sistema de Rescate Animal mediante HTML5.
 Se incluyen las páginas principales, el formulario de reportes y el registro de rescates.
+
+""Actualización de documentación:
+Se verificó la estructura del proyecto y la publicación de los archivos HTML5 correspondientes a la Actividad 3.""
