@@ -32,3 +32,7 @@ Esta entrega corresponde a una maqueta estructural HTML5. El formulario utiliza 
 
 - Repositorio público: https://github.com/jastenymaciascastro-ship-it/sistema-rescate-html5
 - Rama de trabajo solicitada: `feature/maquetacion-html`
+## Actualización de la actividad 3
+
+Se completa la documentación del proyecto de maquetación estructural del Sistema de Rescate Animal mediante HTML5.
+Se incluyen las páginas principales, el formulario de reportes y el registro de rescates.
